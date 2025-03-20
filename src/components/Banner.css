@@ -1,0 +1,74 @@
+/* Banner Styles */
+.banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 150px;
+  height: 300px; /* Adjust this height based on your needs */
+  background-size: cover; /* Ensure the image covers the entire banner */
+  background-position: center; /* Center the image in the banner */
+  background-repeat: no-repeat; /* Avoid repeating the image */
+  border-radius: 8px;
+  margin-top: 52px;
+  z-index: 1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  color: #fff; /* White text to contrast the image */
+}
+
+.banner-content {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5); /* Optional overlay for better readability */
+  padding: 10px 20px;
+  border-radius: 8px;
+
+}
+
+.banner-content h1 {
+  margin: 0;
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.banner-content p {
+  color: #e5e7e8; /* Change the subtitle color */
+  font-size: 18px;
+  margin: 5px 0 0;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .banner {
+    padding: 50px 20px;
+  }
+
+  .banner h1 {
+    font-size: 2em;
+  }
+
+  .banner p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    padding: 40px 15px;
+  }
+
+  .banner h1 {
+    font-size: 1.8em;
+  }
+
+  .banner p {
+    font-size: 0.9em;
+  }
+}

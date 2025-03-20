@@ -1,0 +1,142 @@
+/* Sticky Navbar */
+.navbar {
+  position: fixed;  /* Keeps navbar in place */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1f2833;
+  color: #c5c6c7;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;  /* Ensures navbar is always on top */
+}
+
+/* Add margin to body so content doesn’t get hidden behind navbar */
+body {
+  margin-top: 60px;  /* Adjust this if needed */
+  box-sizing: border-box;
+}
+
+/* Left side (menu + links) */
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.menu-button {
+  font-size: 22px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  transition: all 0.3s ease; 
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #66fcf8;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+.nav-links a:hover {
+  background-color: #45a29e;
+  border-radius: 5px;
+  color: #0b0c10;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 5px;
+  font-size: 16px;
+  width: 200px;
+  border: 1px solid #45a29e;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.search-bar button {
+  padding: 6px 14px;
+  font-size: 13px;
+  background: #66fcf1;
+  color: #0b0c10;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.search-bar button:hover {
+  background: #45a29e;
+  color: #c5c6c7;
+}
+
+/* Auth Links (Login & Signup) */
+.auth-links {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-right: 20px;  /* Shift links to the left */
+}
+
+.auth-links a {
+  text-decoration: none;
+  color: #66fcf1;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.auth-links a:hover {
+  background-color: #45a29e;
+  color: #222324;
+}
+
+
+
+
+/* Responsive (Mobile) */
+@media (max-width: 768px) {
+  .menu-button {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: rgb(28, 29, 29);
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    width: 30%;
+    padding: 10px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .search-bar input {
+    width: 100px;
+  }
+}

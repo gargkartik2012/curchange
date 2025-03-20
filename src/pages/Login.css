@@ -1,0 +1,59 @@
+.login {
+  max-width: 350px;
+  margin: 70px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login h2 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login form input {
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login form input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.login form button {
+  background-color: #3498db;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.login form button:hover {
+  background-color: #2980b9;
+}
+
+/* Style for Sign Up link */
+.auth-link {
+  color: #3498db;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.auth-link:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}

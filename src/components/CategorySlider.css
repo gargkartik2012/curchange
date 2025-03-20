@@ -1,0 +1,18 @@
+
+.category-slider {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .category-item {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .category-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  

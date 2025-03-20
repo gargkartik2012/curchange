@@ -1,0 +1,124 @@
+.footer {
+  background-color: #222; /* Dark but not pure black */
+  color: #ddd; /* Light gray for readability */
+  padding: 40px 20px;
+  text-align: center;
+  position:relative;
+  width:100%;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 15px;
+  min-width: 250px;
+  text-align: left;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #f8b400;
+  padding-bottom: 5px;
+  color: #fff;
+}
+
+.footer-section p,
+.footer-section ul li {
+  color: #bbb; /* Light gray for better contrast */
+  font-size: 14px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 8px 0;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #ddd;
+  transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #f8b400;
+}
+
+/* Newsletter Input */
+.footer-section .newsletter input {
+  width: 90%;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.footer-section .newsletter button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #f8b400;
+  color: #222;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer-section .newsletter button:hover {
+  background-color: #ffcc00;
+}
+
+/* Social Icons */
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: #ddd;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #f8b400;
+}
+
+.footer-bottom {
+  margin-top: 2px;
+  border-top: 1px solid #444;
+  padding: 8px 0;
+  font-size: 14px;
+  color: #bbb;
+}
+
+
+
+/* ✅ Mobile Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    min-width: 100%;
+    margin: 20px 0;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 2px;
+  }
+}

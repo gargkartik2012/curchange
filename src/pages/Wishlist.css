@@ -1,0 +1,25 @@
+.wishlist {
+    padding: 20px;
+  }
+  
+  .wishlist h2 {
+    color: #2c3e50;
+  }
+  
+  /* Render wishlist items here */
+  .wishlist-item {
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+  }
+  
+  .wishlist-item h3 {
+    color: #2c3e50;
+  }
+  
+  .wishlist-item p {
+    margin: 5px 0;
+  }
+  

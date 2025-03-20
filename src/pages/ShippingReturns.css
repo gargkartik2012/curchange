@@ -1,0 +1,36 @@
+  .shipping-returns-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    
+
+  }
+  
+  h1, h2 {
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+  }
+  
+  h3 {
+    color: #0c0c0c;
+  }
+  
+  ul, ol {
+    margin-left: 20px;
+  }
+  
+  p, li {
+    color: #666;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
