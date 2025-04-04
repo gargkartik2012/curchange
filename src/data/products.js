@@ -29,7 +29,7 @@ const productsData = [
   },
   {
     id: 4,
-    name: 'Handbag',
+    name: 'Cosmetics',
     price: 252,
     description: 'Elegant and spacious handbags for daily use.',
     imageUrl: product4Image
@@ -43,9 +43,9 @@ const productsData = [
   },
   {
     id: 6,
-    name: 'Pickles',
+    name: 'Jams',
     price: 256,
-    description: 'Homemade pickles with a traditional taste.',
+    description: 'Homemade jams with a traditional taste.',
     imageUrl: product6Image
   }
 ];
