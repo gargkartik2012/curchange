@@ -20,7 +20,7 @@ const Footer = () => {
           <h3>Quick Links</h3>
           <ul>
             {[
-              { href: "/PrivacyPolicy", label: "Privacy Policy" },
+              { href: "/privacypolicy", label: "Privacy Policy" },
               { href: "/contact", label: "Contact Us" },
               { href: "/faq", label: "FAQs" },
               { href: "/shippingreturns", label: "Shipping & Returns" },
