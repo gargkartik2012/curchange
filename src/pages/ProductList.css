@@ -23,7 +23,7 @@
 /* Responsive for mobile */
 @media (max-width: 480px) {
   .product-list {
-    grid-template-columns: 1fr; /* 1 product per row */
+    grid-template-columns: repeat(2, 1fr); /* 1 product per row */
     gap: 10px 0; /* Keep row spacing */
     padding: 5px;
     margin-left: 5px; /* Keep alignment */
