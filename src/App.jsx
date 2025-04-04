@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Category from './components/Category';
-import PrivacyPolicy from './pages/PrivacyPolicy',
+import PrivacyPolicy from './pages/PrivacyPolicy';
 import ContactUs from './pages/Contact';
 import ShippingReturns from './pages/ShippingReturns';
 import WishlistProvider from './contexts/WishlistContext';  // ✅ Wrap Context
