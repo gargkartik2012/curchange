@@ -1,7 +1,7 @@
 import React from 'react';
 import Banner from '../components/Banner';
 import ProductList from './ProductList';
-import Category from '../components/category';
+import Category from '../components/Category';
 import './Home.css'; // Import the CSS file
 import grocery from '../assets/images/groceries-cropped.jpg';
 
