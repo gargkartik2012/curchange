@@ -12,7 +12,7 @@ import personalcare from '../assets/images/personalcare.jpg';
 import household from '../assets/images/household.jpg';
 import grains from '../assets/images/wheat flour image.jpg';
 import meat from '../assets/images/meat.jpg'
-import beverages from '../assets/images/cold_beverages1.jpg'
+import beverages from '../assets/images/Cold_beverages1.jpg'
 import rice from '../assets/images/Rice-pouch-design.jpg'
 
 export const Category = () => {
