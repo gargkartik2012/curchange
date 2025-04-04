@@ -24,6 +24,7 @@ const Signup = lazy(() => import('./pages/Signup'));
 const Wishlist = lazy(() => import('./pages/Wishlist'));
 const Orders = lazy(() => import('./pages/Orders'));
 const NotFound = lazy(() => import('./pages/NotFound'));
+const PrivacyPolicy = lazy(()=> import('./pages/PrivacyPloicy'));
 
 function App() {
   return (
