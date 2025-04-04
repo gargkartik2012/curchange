@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Category from './components/Category';
-// import PrivacyPolicy from './pages/PrivacyPolicy',
+import PrivacyPolicy from './pages/PrivacyPolicy',
 import ContactUs from './pages/Contact';
 import ShippingReturns from './pages/ShippingReturns';
 import WishlistProvider from './contexts/WishlistContext';  // ✅ Wrap Context
@@ -24,7 +24,7 @@ const Signup = lazy(() => import('./pages/Signup'));
 const Wishlist = lazy(() => import('./pages/Wishlist'));
 const Orders = lazy(() => import('./pages/Orders'));
 const NotFound = lazy(() => import('./pages/NotFound'));
-const PrivacyPolicy = lazy(()=> import('./pages/PrivacyPolicy'));
+
 
 function App() {
   return (
