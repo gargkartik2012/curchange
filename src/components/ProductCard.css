@@ -1,14 +1,15 @@
 /* Product Card Styles */
 .product-card {
   border: 1px solid #ddd;
-  border-radius: 15px;
-  padding: 70px; /* Increased padding for more space */
+  border-radius: 25px;
+  padding: 50px; /* Increased padding for more space */
   background: #fff;
   text-align: center;
   margin-left: 50px;
   margin-right: 50px;
+  
   transition: transform 0.3s ease-in-out;
-  max-width: 250px; /* Increased width for larger cards */
+  max-width: 280px; /* Increased width for larger cards */
   flex: 1; /* Ensure proper spacing in the container */
 }
 
@@ -22,7 +23,7 @@
 }
 
 .product-image {
-  width: 100%;
+  width: 60%;
   height: 150px; /* Increased height for better visibility */
   object-fit: cover;
   border-radius: 5px;
@@ -40,10 +41,13 @@
   min-height: 40px; /* Increased height for better description display */
 }
 
-.product-price {
+.product-price,.product-discounted-price {
   font-size: 16px; /* Larger font size */
   font-weight: bold;
   color: #28a745;
+}
+.discount-price {
+  color: red;
 }
 
 .product-actions {
@@ -122,6 +126,6 @@
 
 @media (max-width: 480px) {
   .product-card {
-    flex: 0 1 calc(100% - 20px); /* Show 1 card per row on extra small screens */
+    flex: 0 1 calc(100% - 20px); 
   }
 }
