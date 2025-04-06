@@ -71,13 +71,13 @@
   }
 
   .category-card {
-    width: 90%; /* Roughly 3 cards per row (with gap accounted for) */
+    width: 30%; /* Roughly 3 cards per row (with gap accounted for) */
     margin: 0; /* Remove unnecessary margin */
     padding: 2px; /* Small padding */
     box-sizing: border-box;
     text-align: center;
-    margin-left: 35%;
-    gap:2px
+    margin-left: 5px,
+    
   }
 
   .category-image {
