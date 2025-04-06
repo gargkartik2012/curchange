@@ -57,3 +57,32 @@
   color: #2980b9;
   text-decoration: underline;
 }
+
+
+
+
+
+  
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+  .login {
+    margin: 50px auto;
+    padding: 20px;
+    margin-left: 30%;
+  }
+
+  .login h2 {
+    font-size: 30px;
+  }
+
+  .login form input {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .login form button {
+    font-size: 22px;
+    padding: 10px;
+  }
+}
