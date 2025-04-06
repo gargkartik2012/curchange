@@ -44,3 +44,26 @@
 .signup form button:hover {
   background-color: #2980b9;
 }
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+  .signup {
+    margin: 20px auto;
+    padding: 20px 10px;
+    margin-left: 30%;
+  }
+
+  .signup h2 {
+    font-size: 20px;
+  }
+
+  .signup form input {
+    font-size: 19px;
+    padding: 15px;
+  }
+
+  .signup form button {
+    font-size:22px;
+    padding: 10px;
+  }
+}
