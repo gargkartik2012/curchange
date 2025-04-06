@@ -1,10 +1,10 @@
 .footer {
   background-color: #222; /* Dark but not pure black */
   color: #ddd; /* Light gray for readability */
-  padding: 40px 20px;
+  padding: 10px 65px;
   text-align: center;
-  position:relative;
-  width:100%;
+  position: relative;
+  width: 100%;
 }
 
 .footer-container {
@@ -66,7 +66,7 @@
 
 .footer-section .newsletter button {
   margin-top: 10px;
-  padding: 8px 12px;
+  padding: 8px 2px;
   background-color: #f8b400;
   color: #222;
   border: none;
@@ -102,23 +102,51 @@
   color: #bbb;
 }
 
-
-
 /* ✅ Mobile Responsive Design */
-@media (max-width: 768px) {
+/* html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+} */
+
+@media (max-width: 780px) {
+  .footer {
+    width: 110%;
+  }
   .footer-container {
+    display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    padding-top: 1%;
+    padding-bottom: 1%;
+
     text-align: center;
+    width: 115vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    background-color: #000; /* Or whatever color you're using */
+    color: #fff;
   }
 
   .footer-section {
-    min-width: 100%;
-    margin: 20px 0;
+    min-width: 90%;
+    margin-bottom: 0px;
   }
-
   .social-icons {
     display: flex;
     justify-content: center;
-    margin-top: 2px;
+    
+  }
+
+  .footer-bottom {
+    font-size: 16px;
+  }
+
+  .footer-section h3 {
+    font-size: 30px;
+  }
+  .footer-section p,.footer-section ul li {
+    font-size: 20px;
   }
 }
