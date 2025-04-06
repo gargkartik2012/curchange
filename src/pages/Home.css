@@ -6,3 +6,22 @@
   .centered-title {
     text-align: center;
   } 
+/* Responsive Design for Medium Screens */
+@media (max-width: 768px) {
+  
+  .centered-title {
+    font-size: 20px; /* Adjust font size for medium screens */
+    margin-bottom: 15px; /* Reduce spacing */
+  }
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 480px) {
+
+  .centered-title {
+    font-size: 30px; /* Smaller font size for mobile devices */
+    margin-bottom: 10px; /* Reduce spacing */
+    margin-left: 4cm;
+  }
+}
+  
