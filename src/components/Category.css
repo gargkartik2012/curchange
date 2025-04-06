@@ -5,8 +5,9 @@
   gap: 20px;
   margin-top: 50px; /* Add top margin here */
   padding: 20px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: auto; /* Center the container */
+  margin-right: auto; /* Center the container */
+  justify-content: center; /* Ensure alignment on smaller screens */
 }
 
 /* Individual Category Card Styling */
@@ -47,15 +48,44 @@
   }
 
   .category-card {
-    width: 100pt;
-    padding: 12px;
+    width: 45%; /* Make each card take up half the width */
+    max-width: 200px; /* Optional: Limit the max width */
+    margin: 0 auto; /* Center each card horizontally */
+    
   }
 
   .category-image {
-    height: 90px;
+    height: 80px; /* Adjust height for smaller screens */
   }
 
   .category-name {
-    font-size: 20px;
+    font-size: 18px; /* Slightly smaller font for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .category-container {
+    gap: 10px; /* Reduce gap for very small screens */
+    padding: 2px; /* Compact padding */
+    
+  }
+
+  .category-card {
+    width: 90%; /* Roughly 3 cards per row (with gap accounted for) */
+    margin: 0; /* Remove unnecessary margin */
+    padding: 2px; /* Small padding */
+    box-sizing: border-box;
+    text-align: center;
+    margin-left: 35%;
+    gap:2px
+  }
+
+  .category-image {
+    height: auto; /* Let the height adjust dynamically */
+    max-height: 100%; /* Set a maximum height */
+  }
+
+  .category-name {
+    font-size: 20px; /* Slightly smaller font for very small screens */
   }
 }
