@@ -18,7 +18,7 @@ const Cart = () => {
       return;
     }
 
-    alert(`Total amount: $${totalPrice}\nProceeding to checkout...`);
+    alert(`Total amount: ${totalPrice}\nProceeding to checkout...`);
     setCart([]); // Clear cart after purchase (mock checkout)
   };
 
@@ -72,7 +72,7 @@ const Cart = () => {
               <img src={item.imageUrl} alt={item.name} className="cart-item-image" />
               <div className="cart-item-details">
                 <h3>{item.name}</h3>
-                <p>Price: ${item.price}</p>
+                <p>Price: <sup>₹</sup>{item.price}</p>
                 <div className="quantity-actions">
                   <button onClick={() => increaseQuantity(item.id)}>+</button>
                   <p>({item.quantity})</p>
@@ -86,7 +86,7 @@ const Cart = () => {
               </div>
             </div>
           ))}
-          <h3>Total: ${totalPrice}</h3>
+          <h3>Total: <sup>₹</sup>{totalPrice}</h3>
           <button className="buy-now" onClick={handleBuyNow}>
             Buy Now
           </button>
