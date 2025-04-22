@@ -14,7 +14,7 @@ import grains from '../assets/images/wheat flour image.jpg';
 import meat from '../assets/images/meat.jpg'
 import beverages from '../assets/images/Cold_beverages1.jpg'
 import rice from '../assets/images/Rice-pouch-design.jpg'
-import furniture from ''../assets/images/other.jpg'
+import furniture from '../assets/images/other.jpg';
 
 export const Category = () => {
   const categories = [
