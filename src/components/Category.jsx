@@ -1,4 +1,4 @@
-ceimport React from 'react';
+import React from 'react';
 import './Category.css';
 import chocolateg from '../assets/images/chocolate.jpg';
 import pulse from '../assets/images/pulses.jpg';
