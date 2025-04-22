@@ -1,7 +1,6 @@
 import React from "react";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./Footer.css";
-import { Link } from 'react-router';
 
 const Footer = () => {
   return (
@@ -21,14 +20,14 @@ const Footer = () => {
           <h3>Quick Links</h3>
           <ul>
             {[
-              { href: "/privacypolicy", label: "Privacy Policy" },
+              { href: "/PrivacyPolicy", label: "Privacy Policy" },
               { href: "/contact", label: "Contact Us" },
               { href: "/faq", label: "FAQs" },
               { href: "/shippingreturns", label: "Shipping & Returns" },
               { href: "/termsandconditions", label: "Terms & Conditions" },
             ].map((link, index) => (
               <li key={index}>
-                <Link to={link.href}>{link.label}</Link>
+                <a href={link.href}>{link.label}</a>
               </li>
             ))}
           </ul>
