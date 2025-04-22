@@ -36,6 +36,7 @@ body {
   display: none;
 }
 
+
 /* Navigation Links */
 .nav-links {
   display: flex;
@@ -46,6 +47,17 @@ body {
   justify-content: flex-end;
   transition: all 0.3s ease;
 }
+/* .cart-count{
+  position:absolute;
+  top:-5px;
+  right:-10px;
+  background: red;
+  color: white;
+  font-size: 12px;
+  padding:5px;
+  
+
+} */
 .nav-links.open {
   transition: max-height 0.3s ease-in-out;
 }
@@ -61,6 +73,24 @@ body {
   background-color: #45a29e;
   border-radius: 5px;
   color: #0b0c10;
+}
+
+.cart-icon {
+ 
+  font-size: 320px;
+  position: relative;
+
+}
+
+.cart-badge {
+  
+  top: -8px;
+  right: -8px;
+  background-color: red;
+  color: white;
+  font-size: 0.65rem;
+  padding: 2px 6px;
+  border-radius: 50%;
 }
 
 /* Search Bar */
