@@ -56,7 +56,7 @@ const ProductCard = ({ product }) => {
           onClick={() => handleButtonClick(addToWishlist, product, "wishlist")}
           aria-label="Save for Later"
         >
-          ❤️ Save for Later
+          ❤️
         </button>
       </div>
 
