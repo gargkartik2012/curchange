@@ -1,4 +1,4 @@
-import React from 'react';
+ceimport React from 'react';
 import './Category.css';
 import chocolateg from '../assets/images/chocolate.jpg';
 import pulse from '../assets/images/pulses.jpg';
@@ -14,6 +14,7 @@ import grains from '../assets/images/wheat flour image.jpg';
 import meat from '../assets/images/meat.jpg'
 import beverages from '../assets/images/Cold_beverages1.jpg'
 import rice from '../assets/images/Rice-pouch-design.jpg'
+import furniture from ''../assets/images/other.jpg'
 
 export const Category = () => {
   const categories = [
@@ -31,6 +32,7 @@ export const Category = () => {
     { name: "Frozen Foods", image: biscuits },
     { name: "Personal Care", image: personalcare },
     { name: "Household Supplies", image: household },
+    {name:"Other Items",image:furniture},
     
   ];
   const handleCategoryClick = (category) => {
