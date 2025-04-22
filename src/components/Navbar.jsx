@@ -1,11 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect,useContext } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import { CartContext } from "../contexts/CartContext";
+import { FaShoppingCart } from 'react-icons/fa';
+
+
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const { uniqueCount } = useContext(CartContext);
+
+  //console.log("🛒 Cart Count:", uniqueCount);
 
   // Check login status on mount
   useEffect(() => {
@@ -13,6 +20,8 @@ const NavBar = () => {
     setIsLoggedIn(!!token);
   }, []);
 
+
+  
   const toggleMenu = () => setIsOpen((prev) => !prev);
   const closeMenu = () => setIsOpen(false);
   const handleSearch = () => alert(`Searching for: ${searchTerm}`);
@@ -39,8 +48,10 @@ const NavBar = () => {
           <Link to="/category" onClick={closeMenu}>
             Category
           </Link>
-          <Link to="/cart" onClick={closeMenu}>
-          🛒
+          <Link to="/cart" onClick={closeMenu} className="cart-icon">
+          <FaShoppingCart size={25} />
+          {/* 🛒 */}
+          {uniqueCount > 0 && <span className="cart-badge">{uniqueCount}</span>}
           </Link>
         </div>
       </div>
